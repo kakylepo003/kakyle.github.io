@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Spree</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">ShoppingSpree</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#sale">Sale</a>
+        <a href="#cart">Cart</a>
+      </nav>
+      <div class="header-actions">
+        <button class="search-btn">Search</button>
+        <button class="cart-btn">Cart <span class="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h2>Shopping Spree Sale!</h2>
+      <p>Up to 10% off on selected items. Limited time only.</p>
+      <a href="#shop" class="btn btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Shop Section with Filters -->
+  <section class="products" id="shop">
+    <div class="container">
+      <h3>Featured Deals</h3>
+      
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="men">Men</button>
+        <button class="filter-btn" data-filter="women">Women</button>
+        <button class="filter-btn" data-filter="electronics">Electronics</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <article class="product-card" data-category="men" data-id="1" data-price="49.99">
+          <div class="product-badge">Sale</div>
+          <img src="c:\Users\63906\OneDrive\Pictures\Camera Roll\IWR0223BU3_FL_F_ZA.webp" alt="Men's Jacket" class="product-img">
+          <div class="product-info">
+            <h4 class="product-name">Men's Jacket</h4>
+            <p class="product-price">
+              <span class="price-sale">$49.99</span>
+              <span class="price-original">$99.99</span>
+            </p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card" data-category="women" data-id="2" data-price="29.99">
+          <div class="product-badge">Hot</div>
+          <img src="c:\Users\63906\OneDrive\Pictures\Camera Roll\H56717s4.webp" alt="Summer Dress" class="product-img">
+          <div class="product-info">
+            <h4 class="product-name">Summer Dress</h4>
+            <p class="product-price">
+              <span class="price-sale">$29.99</span>
+              <span class="price-original">$59.99</span>
+            </p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card" data-category="electronics" data-id="3" data-price="199.99">
+            <div class="product-badge">Sale</div>
+          <img src="c:\Users\63906\OneDrive\Pictures\Camera Roll\galaxy-buds-3-fe-red-background.webp" alt="Wireless Earbuds" class="product-img">
+          <div class="product-info">
+            <h4 class="product-name">Wireless Earbuds</h4>
+            <p class="product-price">
+              <span class="price-sale">$189.02</span>
+              <span class="price-original">$199.99</span>
+            </p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card" data-category="accessories" data-id="4" data-price="15.99">
+          <div class="product-badge">Sale</div>
+          <img src="c:\Users\63906\OneDrive\Pictures\Camera Roll\images.jpg" alt="Leather Wallet" class="product-img">
+          <div class="product-info">
+            <h4 class="product-name">Leather Wallet</h4>
+            <p class="product-price">
+              <span class="price-sale">$45.40</span>
+              <span class="price-original">$59.99</span>
+            </p>
+            <button class="btn btn-add-cart">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart-section" id="cart">
+    <div class="container">
+      <h3>Your Cart</h3>
+      <div class="cart-content">
+        <div class="cart-items">
+          <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-summary">
+          <h4>Order Summary</h4>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span class="cart-subtotal">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span>Free</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span class="cart-total">$0.00</span>
+          </div>
+          <button class="btn btn-primary btn-checkout" disabled >Checkout</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banner -->
+  <section class="promo" id="sale">
+    <div class="container">
+      <h3>Flash Deal: Ends in <span class="countdown">02:14:33</span></h3>
+      <a href="#shop" class="btn btn-secondary">Grab It Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 ShoppingSpree. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
